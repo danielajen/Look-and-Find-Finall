@@ -18,6 +18,7 @@ namespace Look_and_Find_Finall
         }
 
         int score = 0;
+
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -28,6 +29,7 @@ namespace Look_and_Find_Finall
             show(1);
             score = score + 10;
             checkBox1.Enabled = false;
+            pb1davies.Enabled = false;
         }
 
         private void showkdb(object sender, EventArgs e)
@@ -35,6 +37,8 @@ namespace Look_and_Find_Finall
             show(3);
             score = score + 10;
             checkBox3.Enabled = false;
+            kdb.Enabled = false;
+
         }
 
         private void showson(object sender, EventArgs e)
@@ -42,6 +46,7 @@ namespace Look_and_Find_Finall
             show(5);
             score = score + 10;
             checkBox4.Enabled = false;
+            son.Enabled = false;
         }
 
         private void showhaaland(object sender, EventArgs e)
@@ -49,6 +54,7 @@ namespace Look_and_Find_Finall
             show(2);
             score = score + 10;
             checkBox2.Enabled = false;
+            haaland.Enabled = false;
         }
 
         private void showinsigne(object sender, EventArgs e)
@@ -56,6 +62,7 @@ namespace Look_and_Find_Finall
             show(6);
             score = score + 10;
             checkBox5.Enabled = false;
+            insigne.Enabled = false;
         }
 
         private void showgoat(object sender, EventArgs e)
@@ -63,7 +70,8 @@ namespace Look_and_Find_Finall
             show(7);
             score = score + 10;
             checkBox6.Enabled = false;
-            
+            messi.Enabled = false;
+
         }
 
         private void showsalah(object sender, EventArgs e)
@@ -71,6 +79,7 @@ namespace Look_and_Find_Finall
             show(8);
             score = score + 10;
             this.checkBox7.Enabled = false;
+            label1.Enabled = false;
         }
 
         private void show(int num)
@@ -86,10 +95,11 @@ namespace Look_and_Find_Finall
             if (num == 8) this.checkBox7.Checked = true;
             #endregion
 
-            else if (score >= 80)
+              if (score >= 70)
             {
-                MessageBox.Show("show pic");
                 button1.Visible = true;
+                pictureBox2.Visible = true;
+                MessageBox.Show("Champion!!");
             }
         }
 
@@ -122,6 +132,13 @@ namespace Look_and_Find_Finall
             show(4);
             score = score + 10;
             checkBox8.Enabled = false;
+            Vardy.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
     }
