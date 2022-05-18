@@ -45,7 +45,13 @@ namespace Look_and_Find_Finall
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lbltimemin.Text = time.ToString();
+            int seconds = time % 60;
+            int minutes = time / 60;
+            lbltimemin.Text = minutes.ToString()+":"+seconds;
+            if (seconds < 10)
+            {
+                lbltimemin.Text = minutes.ToString() + ":0" + seconds;
+            }
             time--;
             if (time == -1)
             {
@@ -57,6 +63,22 @@ namespace Look_and_Find_Finall
         private void Form2_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            #region
+            pb1hair.Parent = pictureBox2;
+            pb1hair.BackgroundImage = null;
+            pb2neckchest.Parent = pictureBox2;
+            pb2neckchest.BackColor = Color.Transparent;
+            fcblogo5.Parent = pictureBox2;
+            fcblogo5.BackgroundImage = null;
+            pb3nikelogo.Parent = pictureBox2;
+            pb3nikelogo.BackgroundImage = null;
+            sockthing.Parent = pictureBox2;
+            sockthing.BackgroundImage = null;
+            #endregion
+
+
         }
+
+
     }
-}
+    }

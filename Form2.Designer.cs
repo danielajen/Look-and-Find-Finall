@@ -35,6 +35,11 @@ namespace Look_and_Find_Finall
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltimemin = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,23 +48,18 @@ namespace Look_and_Find_Finall
             this.pb3nikelogo = new System.Windows.Forms.PictureBox();
             this.sockthing = new System.Windows.Forms.PictureBox();
             this.fcblogo5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbltimemin = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1hair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2neckchest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3nikelogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sockthing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fcblogo5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -106,6 +106,54 @@ namespace Look_and_Find_Finall
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(239, 421);
             this.panel1.TabIndex = 13;
+            // 
+            // lbltimemin
+            // 
+            this.lbltimemin.BackColor = System.Drawing.Color.LightBlue;
+            this.lbltimemin.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltimemin.Location = new System.Drawing.Point(49, 340);
+            this.lbltimemin.Name = "lbltimemin";
+            this.lbltimemin.Size = new System.Drawing.Size(116, 54);
+            this.lbltimemin.TabIndex = 21;
+            this.lbltimemin.Text = "2:";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.LightBlue;
+            this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(201, 42);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Select The Higher Rated Card For Extra Time";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(167, 188);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 96);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(89, 188);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(67, 96);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(6, 187);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(67, 96);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
             // 
             // label4
             // 
@@ -190,54 +238,6 @@ namespace Look_and_Find_Finall
             this.fcblogo5.TabStop = false;
             this.fcblogo5.Click += new System.EventHandler(this.clickfcblogo);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(6, 187);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 96);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(89, 188);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 96);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(167, 188);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 96);
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.LightBlue;
-            this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(201, 42);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Select The Higher Rated Card For Extra Time";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lbltimemin
-            // 
-            this.lbltimemin.BackColor = System.Drawing.Color.LightBlue;
-            this.lbltimemin.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltimemin.Location = new System.Drawing.Point(49, 340);
-            this.lbltimemin.Name = "lbltimemin";
-            this.lbltimemin.Size = new System.Drawing.Size(97, 43);
-            this.lbltimemin.TabIndex = 21;
-            this.lbltimemin.Text = "2:";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -264,14 +264,14 @@ namespace Look_and_Find_Finall
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1hair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2neckchest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3nikelogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sockthing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fcblogo5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
