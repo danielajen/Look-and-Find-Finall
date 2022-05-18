@@ -136,8 +136,10 @@ namespace Look_and_Find_Finall
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
+        {   // code for new form
+            Form2 main = new Form2();
+            main.Show();
+            this.Hide();
 
         }
     }
