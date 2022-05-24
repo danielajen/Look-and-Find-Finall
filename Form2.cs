@@ -13,6 +13,10 @@ namespace Look_and_Find_Finall
     public partial class Form2 : Form
     {
         int time = 120;
+        Random box = new Random();
+        int number = 0;
+        int number2 = 0;
+        int number3 = 0;
         public Form2()
         {
             InitializeComponent();
@@ -47,7 +51,7 @@ namespace Look_and_Find_Finall
         {
             int seconds = time % 60;
             int minutes = time / 60;
-            lbltimemin.Text = minutes.ToString()+":"+seconds;
+            lbltimemin.Text = minutes.ToString() + ":" + seconds;
             if (seconds < 10)
             {
                 lbltimemin.Text = minutes.ToString() + ":0" + seconds;
@@ -58,6 +62,32 @@ namespace Look_and_Find_Finall
                 timer1.Stop();
                 MessageBox.Show("L! You ran outta time");
             }
+
+            number = box.Next(1, 15);
+            // first one messi
+            #region showpics
+            if (number == 1) pbcardmessi.Image = Properties.Resources.ronaldopowerup;
+            if (number == 2) pbcardmessi.Image = Properties.Resources.fifa_card_powerup;
+            if (number == 3) pbcardmessi.Image = Properties.Resources.powerup2;
+
+            #endregion
+
+            number2 = box.Next(1, 15);
+            // second one ronaldo
+            #region showpics
+            if (number2 == 1) pbcardronaldo.Image = Properties.Resources.ronaldopowerup;
+            if (number2 == 2) pbcardronaldo.Image = Properties.Resources.fifa_card_powerup;
+            if (number2 == 3) pbcardronaldo.Image = Properties.Resources.powerup2;
+
+            #endregion
+            number3 = box.Next(1, 15);
+            // last goat one messi
+            #region showpics
+            if (number3 == 1) pbcardextra.Image = Properties.Resources.ronaldopowerup;
+            if (number3 == 2) pbcardextra.Image = Properties.Resources.fifa_card_powerup;
+            if (number3 == 3) pbcardextra.Image = Properties.Resources.powerup2;
+
+            #endregion
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -79,6 +109,27 @@ namespace Look_and_Find_Finall
 
         }
 
+        private void messii(object sender, EventArgs e)
+        {
+            //gain time for goat
+            int seconds = time % 60;
+            time = time + 10;
+            int minutes = time / 60;
+            lbltimemin.Text = minutes.ToString() + ":" + seconds;
 
+        }
+
+        private void losetimelol(object sender, EventArgs e)
+        {
+            //lose time for ronaldo lol
+            time = time - 30;
+            int seconds = time % 60;
+            int minutes = time / 60;
+            lbltimemin.Text = minutes.ToString() + ":" + seconds;
+            pbcardronaldo.Visible = false;
+
+        }
     }
     }
+
+ 
