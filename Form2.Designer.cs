@@ -49,6 +49,7 @@ namespace Look_and_Find_Finall
             this.sockthing = new System.Windows.Forms.PictureBox();
             this.fcblogo5 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -113,7 +114,7 @@ namespace Look_and_Find_Finall
             this.lbltimemin.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltimemin.Location = new System.Drawing.Point(49, 340);
             this.lbltimemin.Name = "lbltimemin";
-            this.lbltimemin.Size = new System.Drawing.Size(116, 54);
+            this.lbltimemin.Size = new System.Drawing.Size(116, 43);
             this.lbltimemin.TabIndex = 21;
             this.lbltimemin.Text = "2:";
             // 
@@ -179,6 +180,7 @@ namespace Look_and_Find_Finall
             this.label3.Size = new System.Drawing.Size(56, 59);
             this.label3.TabIndex = 15;
             this.label3.Text = "0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -246,6 +248,11 @@ namespace Look_and_Find_Finall
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 490;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,5 +307,6 @@ namespace Look_and_Find_Finall
         private System.Windows.Forms.Label lbltimemin;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

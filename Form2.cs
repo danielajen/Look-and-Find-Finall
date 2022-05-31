@@ -63,31 +63,7 @@ namespace Look_and_Find_Finall
                 MessageBox.Show("L! You ran outta time");
             }
 
-            number = box.Next(1, 15);
-            // first one messi
-            #region showpics
-            if (number == 1) pbcardmessi.Image = Properties.Resources.ronaldopowerup;
-            if (number == 2) pbcardmessi.Image = Properties.Resources.fifa_card_powerup;
-            if (number == 3) pbcardmessi.Image = Properties.Resources.powerup2;
 
-            #endregion
-
-            number2 = box.Next(1, 15);
-            // second one ronaldo
-            #region showpics
-            if (number2 == 1) pbcardronaldo.Image = Properties.Resources.ronaldopowerup;
-            if (number2 == 2) pbcardronaldo.Image = Properties.Resources.fifa_card_powerup;
-            if (number2 == 3) pbcardronaldo.Image = Properties.Resources.powerup2;
-
-            #endregion
-            number3 = box.Next(1, 15);
-            // last goat one messi
-            #region showpics
-            if (number3 == 1) pbcardextra.Image = Properties.Resources.ronaldopowerup;
-            if (number3 == 2) pbcardextra.Image = Properties.Resources.fifa_card_powerup;
-            if (number3 == 3) pbcardextra.Image = Properties.Resources.powerup2;
-
-            #endregion
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -106,28 +82,112 @@ namespace Look_and_Find_Finall
             sockthing.BackgroundImage = null;
             #endregion
 
+            timer2.Start();
+
 
         }
 
         private void messii(object sender, EventArgs e)
         {
-            //gain time for goat
-            int seconds = time % 60;
-            time = time + 10;
-            int minutes = time / 60;
-            lbltimemin.Text = minutes.ToString() + ":" + seconds;
+            if (number == 1 || number == 3)
+            {
+                //gain time for goat
+                int seconds = time % 60;
+                time = time + 10;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardmessi.Visible = false;
+                pbcardextra.Visible = false;
+            }
+            if (number2 == 1 || number2 == 3)
+            {
+                //gain time for goat
+                int seconds = time % 60;
+                time = time + 10;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardmessi.Visible = false;
+                pbcardextra.Visible = false;
+            }
+            if (number3 == 1 || number3 == 3)
+            {
+                //gain time for goat
+                int seconds = time % 60;
+                time = time + 10;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardmessi.Visible = false;
+                pbcardextra.Visible = false;
+            }
 
         }
 
         private void losetimelol(object sender, EventArgs e)
         {
-            //lose time for ronaldo lol
-            time = time - 30;
-            int seconds = time % 60;
-            int minutes = time / 60;
-            lbltimemin.Text = minutes.ToString() + ":" + seconds;
-            pbcardronaldo.Visible = false;
+            if (number == 2)
+            {
+                //lose time for ronaldo lol
+                time = time - 30;
+                int seconds = time % 60;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardronaldo.Visible = false;
+            }
+            if (number2 == 2)
+            {
+                //lose time for ronaldo lol
+                time = time - 30;
+                int seconds = time % 60;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardronaldo.Visible = false;
+            }
+            if (number3 == 2)
+            {
+                //lose time for ronaldo lol
+                time = time - 30;
+                int seconds = time % 60;
+                int minutes = time / 60;
+                lbltimemin.Text = minutes.ToString() + ":" + seconds;
+                pbcardronaldo.Visible = false;
+            }
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            number = box.Next(1, 3);
+            // first one messi
+            #region showpics
+            if (number == 1) pbcardmessi.Image = Properties.Resources.fifa_card_powerup;
+            if (number == 2) pbcardmessi.Image = Properties.Resources.ronaldopowerup;
+            if (number == 3) pbcardmessi.Image = Properties.Resources.powerup2;
+
+            #endregion
+
+            number2 = box.Next(1, 3);
+            // second one ronaldo
+            #region showpics
+            if (number2 == 1) pbcardronaldo.Image = Properties.Resources.fifa_card_powerup;
+            if (number2 == 2) pbcardronaldo.Image = Properties.Resources.ronaldopowerup;
+            if (number2 == 3) pbcardronaldo.Image = Properties.Resources.powerup2;
+
+            #endregion
+            number3 = box.Next(1, 3);
+            // last goat one messi
+            #region showpics
+            if (number3 == 1) pbcardextra.Image = Properties.Resources.fifa_card_powerup;
+            if (number3 == 2) pbcardextra.Image = Properties.Resources.ronaldopowerup;
+            if (number3 == 3) pbcardextra.Image = Properties.Resources.powerup2;
+
+            #endregion
+
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     }
